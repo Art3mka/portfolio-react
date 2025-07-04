@@ -7,13 +7,13 @@ const NavBar = () => {
         </a>
 
         <div className="flex items-center space-x-6">
-          <a href="#skills" className="text-gray-600 hover:text-primary-light transition">
+          <a href="#skills" className="p-2 text-gray-600 hover:-translate-y-1 transition">
             Навыки
           </a>
-          <a href="#projects" className="text-gray-600 hover:text-primary-light transition">
+          <a href="#projects" className="p-2 text-gray-600 hover:-translate-y-1 transition">
             Проекты
           </a>
-          <a href="#contact" className="text-gray-600 hover:text-primary-light transition">
+          <a href="#contact" className="p-2 text-gray-600 hover:-translate-y-1 transition">
             Контакты
           </a>
         </div>
