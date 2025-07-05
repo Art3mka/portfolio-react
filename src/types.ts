@@ -5,7 +5,7 @@ export interface Skill {
   color: string;
 }
 
-export interface Contact {
+export interface ContactInfo {
   icon: React.ReactNode;
   link: string;
   name: string;

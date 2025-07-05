@@ -1,11 +1,10 @@
 import { motion, type Variants } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import type { Contact } from "../types";
-import developerPhoto from "../assets/1.webp";
+import type { ContactInfo } from "../types";
+// import developerPhoto from "../assets/1.webp";
 
 const About = () => {
-  const contacts: Contact[] = [
+  const contacts: ContactInfo[] = [
     { icon: <FaGithub />, link: "https://github.com/Art3mka", name: "GitHub", color: "#000000" },
     {
       icon: <FaLinkedin />,
@@ -14,7 +13,6 @@ const About = () => {
       color: "#0077B5",
     },
     { icon: <FaTelegram />, link: "https://t.me/rtq_shein", name: "Telegram", color: "#2AABEE" },
-    { icon: <HiOutlineMail />, link: "mailto:tema34468@gmail.com", name: "Email", color: "#D14836" },
   ];
 
   const containerVariants: Variants = {
@@ -86,7 +84,7 @@ const About = () => {
 
             <motion.div variants={itemVariants} className="flex gap-3 md:gap-4">
               {contacts.map((contact, index) => (
-                <div className="flex items-center justify-center bg-white rounded-full p-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center justify-center bg-white rounded-full p-2 hover:bg-gray-200 hover:-translate-y-1 transition-all duration-300">
                   <a
                     key={index}
                     href={contact.link}
@@ -112,8 +110,8 @@ const About = () => {
             <div className="relative w-full max-w-md mx-auto">
               <div className="relative overflow-hidden rounded-2xl border-4 border-white shadow-xl lg:shadow-2xl">
                 <img
-                  // src="https://placehold.co/600x400?text=Скоро+тут+будет+мое+фото)"
-                  src={developerPhoto}
+                  src="https://placehold.co/600x400?text=Скоро+тут+будет+мое+фото)"
+                  // src={developerPhoto}
                   alt="Артем Шеин - Веб-разработчик"
                   className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                   loading="lazy"
