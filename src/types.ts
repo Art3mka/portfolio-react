@@ -11,3 +11,12 @@ export interface Contact {
   name: string;
   color: string;
 }
+
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[];
+  imageUrl?: string;
+  githubUrl?: string;
+}

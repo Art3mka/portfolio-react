@@ -77,14 +77,8 @@ const About = () => {
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
               <a
-                href="#contact"
-                className="px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-sm md:text-base"
-              >
-                Связаться со мной
-              </a>
-              <a
                 href="#projects"
-                className="px-4 py-2 md:px-6 md:py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:shadow-lg hover:-translate-y-1 hover:bg-gray-100 transition-all duration-300 text-sm md:text-base"
+                className="px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-sm md:text-base"
               >
                 Посмотреть работы
               </a>
@@ -118,8 +112,8 @@ const About = () => {
             <div className="relative w-full max-w-md mx-auto">
               <div className="relative overflow-hidden rounded-2xl border-4 border-white shadow-xl lg:shadow-2xl">
                 <img
-                  src="https://placehold.co/600x400?text=Скоро+тут+будет+мое+фото)"
-                  // src={developerPhoto}
+                  // src="https://placehold.co/600x400?text=Скоро+тут+будет+мое+фото)"
+                  src={developerPhoto}
                   alt="Артем Шеин - Веб-разработчик"
                   className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                   loading="lazy"
